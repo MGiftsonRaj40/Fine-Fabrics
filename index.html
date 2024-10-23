@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fine Fabrics | Chennai</title>
+</head>
+<header>
+    <div class="header-box">
+        <div class="logo-div">
+            <img src="src/Logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul style="list-style: none;">
+                <a href="#home"><li class="nav active n1"><img src="src/giftbox.png">Prizes</li></a>
+                <a href="#collections"><li class="nav n2"><img src="src/online-shopping.png">Collections</li></a>
+                <a href="#sales"><li class="nav n3"><img src="src/building.png">Sales</li></a>
+                <a href="#footer"><li class="nav n4"><img src="src/customer-mail.png">Contact</li></a>    
+            </ul>
+        </nav>
+        <script>
+            var navItems = document.querySelectorAll('.nav');
+    
+            navItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    navItems.forEach(function(nav) {
+                        nav.classList.remove('active');
+                    });
+                    item.classList.add('active');
+                });
+            });
+        </script>
+    </div>
+    <button class="login" onclick="toggleDisplay()"></button>
+    <script>
+        function toggleDisplay() {
+            var element = document.getElementById("admin-div");
+            if (element.style.display === "none") {
+                element.style.display = "block";
+                document.body.style.overflowY = "hidden";
+            } else {
+                element.style.display = "none";
+                document.body.style.overflowY = "scroll";
+            }
+        }
+    </script>
+</header>
+<body>
+    <img src="side2.png" alt="" class="side-left-top">
+    <img src="side1.png" alt="" class="side-left-bottom">
+    <img src="side2.png" alt="" class="side-right-top">
+    <img src="side1.png" alt="" class="side-right-bottom">
+    <main>
+        <div id="admin-div" style="display: none;">
+            <div class="admin-form">
+                <button id="close" onclick="toggleHide()">X</button>
+                <script>
+                    function toggleHide() {
+                        var element = document.getElementById("admin-div");
+                        element.style.display = "none";
+                        document.body.style.overflowY = "scroll";
+                    }
+                </script>
+                <h2>Admin Login</h2>
+    
+                <form id="loginForm" onsubmit="return validateForm()" action="admin.html" target="_blank">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+            
+                    <span id="errorMessage" class="error"></span><br>
+                    
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <script src="script.js"></script>
+        </div>
+        <section id="home">
+            <h1 class="title">Lucky Prizes</h1>
+            <h2>Get Exclusive Prizes by Buying Our Sarees worth of ₹1575/-</h3>
+            <div class="gift-section">
+                <div class="cards card1">
+                    <h3 class="prize-pos">First Prize</h3>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                               <img src="src/land.png"/>
+                            </div>
+                            <div class="slide">
+                              <img src="src/land2.png"/>
+                            </div>
+                            <div class="slide">
+                              <img src="src/land3.jpg"/>
+                            </div>
+
+                            <div class="slide">
+                                <img src="src/land.png"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/land2.png"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/land3.jpg"/>
+                             </div>
+                        </div>
+                    </div>
+                    <details>
+                        <summary>828 Sq.ft DTCP<br>Approved Plot !! @PONNERI<br>Worth of ₹12.5Lakhs <a class="more"><br>read more</a><a class="less"><br>read less</a></summary>
+                        <p>Krishanpuram<br>-Devaki Enclave-Phase I layout<br>-Plot No.39-828 Sft.,</p>
+                    </details>
+                </div>
+                <div class="cards card2">
+                    <h3 class="prize-pos">Second Prize</h3>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                               <img src="src/appl1.jpg"/>
+                            </div>
+                            <div class="slide">
+                              <img src="src/appl2.jpeg"/>
+                            </div>
+                            <div class="slide">
+                              <img src="src/appl3.jpeg"/>
+                            </div>
+
+                            <div class="slide">
+                                <img src="src/appl1.jpg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/appl2.jpeg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/appl3.jpeg"/>
+                             </div>
+                        </div>
+                    </div>
+                    <details>
+                        <summary>BRANDED<br>HOME APPLIANCES<br>Worth of ₹1 Lakh <a class="more"><br>read more</a><a class="less"><br>read less</a></summary>
+                        <p>Voucher will be given to winner<br>which can be used at<br>nearby Appliances showroom.</p>
+                    </details>        
+                </div>
+                <div class="cards card3">
+                    <h3 class="prize-pos">Third Prize</h3>
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="src/gold1.jpg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/gold2.jpeg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/gold3.jpg"/>
+                             </div>
+
+                             <div class="slide">
+                                <img src="src/gold1.jpg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/gold2.jpeg"/>
+                             </div>
+                             <div class="slide">
+                               <img src="src/gold3.jpg"/>
+                             </div>
+                        </div>
+                    </div>
+                    <details>
+                        <summary>GOLD Voucher<br>Worth of ₹50,000/-<br><a class="more"><br>read more</a><a class="less"><br>read less</a></summary>
+                        <p>Voucher will be given to winner,<br>which can be used to purchase<br>at nearby Jewellery shop.</p>
+                    </details>
+                </div>
+            </div>
+            <div class="app">
+                <div class="redeem"><a href="https://wa.link/pqntaz" target="blank_" class="redeem-tag"><img src="src/bill.png" alt="bill" height="200"></a></div>
+            </div>
+        </section>
+
+        <section id="collections">
+            <h1 class="title">Our Collections</h1>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="products/1.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/3.jpeg" alt="Product 3">
+                </div>
+                <div class="product-item">
+                    <img src="products/7.jpeg" alt="Product 4">
+                </div>
+                <div class="product-item">
+                    <img src="products/2.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/4.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/9.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/5.jpeg" alt="Product 3">
+                </div>
+                <div class="product-item">
+                    <img src="products/10.jpeg" alt="Product 4">
+                </div>
+                <div class="product-item">
+                    <img src="products/12.jpeg" alt="Product 4">
+                </div>
+                <div class="product-item">
+                    <img src="products/11.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/8.jpeg" alt="Product 3">
+                </div>
+                <div class="product-item">
+                    <img src="products/15.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/13.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/16.jpeg" alt="Product 3">
+                </div>
+
+                <div class="product-item">
+                    <img src="products/17.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/21.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/14.jpeg" alt="Product 4">
+                </div>
+                <div class="product-item">
+                    <img src="products/6.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/18.jpeg" alt="Product 3">
+                </div>
+                <div class="product-item">
+                    <img src="products/23.jpeg" alt="Product 4">
+                </div>
+                <div class="product-item">
+                    <img src="products/19.jpeg" alt="Product 1">
+                </div>
+                <div class="product-item">
+                    <img src="products/20.jpeg" alt="Product 2">
+                </div>
+                <div class="product-item">
+                    <img src="products/22.jpeg" alt="Product 3">
+                </div>
+                <div class="product-item">
+                    <img src="products/24.jpeg" alt="Product 4">
+                </div>
+            </div>
+            <h2 class="buy">Get The Above Collections By Cliking The Below Link</h2>
+            <a href="https://wa.link/pqntaz" target="blank_"><div class="wa-link"><h2>SHOP ON WHATSAPP</h2><i class="fa fa-whatsapp"></i></div></a>
+            <div class="whole-tag" id="sales">
+                <div class="tag">
+                    <h1 class="our">Our Sales</h1>
+                    <div class="customers">
+                        <h2>Overall Happy<br>Customers</h2>
+                        <div class="count-div">
+                            <h1 id="count2">Sales Count :</h1>
+                            <h1 id="count"></h1>
+                        </div>
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbwg9UieGRteJ02Lp-PjXuYrrYppb4wMmHxN8QDcHnCdILX5v_IEKiczAig8fyUadIrx/exec'; // Replace with your web app URL
+                            
+                            function fetchData() {
+                            fetch(scriptURL)
+                              .then(response => response.json())
+                              .then(data => {
+                                document.getElementById('count').textContent = `${data}`;
+                              })
+                              .catch(error => {
+                                  console.error('Error fetching data:', error);
+                                  document.getElementById('count').textContent = 'Error fetching data.';
+                                });
+                            }
+                            
+                            setInterval(fetchData, 5000);
+
+                            fetchData(); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="https://wa.link/pqntaz" class="whatsapp-button" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Logo">
+    </a>    
+    <footer id="footer">
+        <div class="Contact">
+            <div>
+                <img src="src/Logo.png" alt="logo" class="fine-fab">
+                <p>
+                    No. 1, Selvam Nagar,<br>Lakshmipuram, Kolathur,<br>Chennai-99.
+                </p>
+                <p>Phone : +91 94453 93661</p>
+                <p>Email : finefabricsenterprises@gmail.com</p>
+            </div>
+        
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none;" class="nav-end">
+                    <a href="#home"><li>Prizes</li></a>
+                    <a href="#collections"><li>Collections</li></a>
+                    <a href="#sales"><li>Sales</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul style="list-style: none;" class="media">
+                    <a href="https://wa.link/pqntaz" target="blank_"><li><img src="src/apple.png"></li></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565704450890&mibextid=ZbWKwL" target="blank_"><li><img src="src/facebook.png"></li></a>
+                    <a href="https://www.instagram.com/finefabricskolathur?igsh=NWNiN3dvMHYxYzEx" target="blank_"><li><img src="src/instagram.png"></li></a>
+                    <a href="https://youtube.com/@finefabrics-f5c?si=l14fmVKJa0Kz-Q3b" target="blank_"><li><img src="src/youtube.png"></li></a>
+                </ul>
+                <div class="contact-end">
+                    <h3>Contact Us</h3>
+                    <div>
+                        <p>finefabricsenterprises@gmail.com</p>
+                        <p>+91 94453 93661</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="rights">
+            <p>@ 2024 Fine_Fabrics Enterprises | All Rights Recived.<br>TeclanC - Web Development Agency</p>
+        </div>
+    </footer>
+</body>
+
+</footer>
+</html>

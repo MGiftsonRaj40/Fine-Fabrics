@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input H1 Content</title>
+    <style>
+        body{
+            background-color: #ffe18f;
+            overflow: hidden;
+        }
+        .div_p{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div{
+            height: fit-content;
+            width: fit-content;
+            background-color: rgba(0, 0, 0, 0.199);
+            padding: 40px;
+            transform: scale(1.5);
+            border-radius: 20px;
+        }
+        input[type="number"]{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_p">
+        <center>
+            <div class="div">
+                <h2>Admin Page</h2><br><br>
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbw_HdzKJgwUwM7RByRftkRQodkq3Ok7_mtifdypupjwhXzsd581tgvfIx9QJsw2n_Af/exec" name="sales-form">
+                    <label for="user_input">Total Sales :</label><br><br>
+                    <input type="number" id="user_input" name="user_input" placeholder="Count Update" required><br><br><br>
+                    <input type="submit" value="submit" id="submit">
+                </form>
+                <br>
+            </div>
+            <script src="Google sheet.js"></script>
+        </center>
+    </div>
+</body>
+</html>
+ 
